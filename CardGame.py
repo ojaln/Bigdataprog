@@ -7,29 +7,29 @@ Created on Fri May 17 17:35:25 2019
 import random
 class Mythology:
     @staticmethod
-    def init(self, skills):
-        self.skills = skills
+    def init(self, Strength):
+        self.Strength = Strength
         
 Aphrodite = Mythology()
-Aphrodite.skills= 70
+Aphrodite.Strength= 70
 Apollo = Mythology()
-Apollo.skills= 98
+Apollo.Strength= 98
 Ares = Mythology()
-Ares.skills= 67
+Ares.Strength= 67
 Athena = Mythology()
-Athena.skills = 55
+Athena.Strength = 55
 Hades = Mythology()
-Hades.skills = 92
+Hades.Strength = 92
 Hephaestus = Mythology()
-Hephaestus.skills = 73
+Hephaestus.Strength = 73
 Hermes = Mythology()
-Hermes.skills = 84
+Hermes.Strength = 84
 Zeus = Mythology()
-Zeus.skills = 100
+Zeus.Strength = 100
 Dionysus = Mythology()
-Dionysus.skills = 86
+Dionysus.Strength = 86
 Hera = Mythology()
-Hera.skills = 97
+Hera.Strength = 97
 
 
 CardSet1 = [Aphrodite,Apollo,Hermes,Dionysus,Athena]
@@ -173,7 +173,7 @@ def playGame(currentCardSet1,currentCardSet2):
         currentCardSet1.insert(0,outdatedList[recSpell])
         CardSet1rSpell="No"
         
-    if(currentCardSet1[0].skills>currentCardSet2[0].skills):
+    if(currentCardSet1[0].Strength>currentCardSet2[0].Strength):
         if(playerFlag==True):
 #                global pointsP1
             pointsP1=pointsP1+1
